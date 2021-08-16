@@ -1,6 +1,6 @@
 {
-    "name": "yansongda/pay",
-    "description": "专注 Alipay 和 WeChat 的支付扩展包",
+    "name": "joql/yansongda-pay",
+    "description": "原作者为yansongda，当前包仅作内部调试",
     "keywords": ["alipay", "wechat", "pay"],
     "support": {
         "issues": "https://github.com/yansongda/pay/issues",
@@ -8,8 +8,8 @@
     },
     "authors": [
         {
-            "name": "yansongda",
-            "email": "me@yansongda.cn"
+            "name": "joql",
+            "email": "joqlweb@gmail.com"
         }
     ],
     "require": {
