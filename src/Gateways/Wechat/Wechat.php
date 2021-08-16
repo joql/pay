@@ -123,15 +123,20 @@ abstract class Wechat implements GatewayInterface
     /**
      * find a order.
      *
-     * @author yansongda <me@yansongda.cn>
-     *
-     * @param string $out_trade_no
+     * @param array $params
      *
      * @return array|bool
+     * @author yansongda <me@yansongda.cn>
+     *
      */
-    public function find($out_trade_no = '')
+    public function find($params = [])
     {
-        $this->config['out_trade_no'] = $out_trade_no;
+        if (isset($params['out_trade_no'])) {
+            $this->config['out_trade_no'] = $params['out_trade_no'];
+        }
+        if (isset($params['transaction_id'])) {
+            $this->config['transaction_id'] = $params['transaction_id'];
+        }
 
         $this->unsetTradeTypeAndNotifyUrl();
 
